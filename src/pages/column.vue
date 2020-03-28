@@ -20,6 +20,7 @@
 		components: {
 			Cell
 		},
+		
 		activated() {
 			axios({
 				url: '/api/goods/column',

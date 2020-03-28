@@ -16,9 +16,9 @@ import './plugins/axios'
 
 let vm=new Vue({
 	data:{
-		hNav:false,
-		fNav:false,
-		bLoad:false
+		hNav:true,
+		fNav:true,
+		bLoad:true
 	},
 	
 	render: h => h(App),

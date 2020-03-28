@@ -25,7 +25,10 @@ axios.interceptors.response.use(function(response) {
 	// Any status code that lie within the range of 2xx cause this function to trigger
 	// 校验返回数据，token过期 ，路由跳转login传递当前路由的地址
 	let currentRoute = router.currentRoute.fullPath;
+	console.log("222")
+	console.log(response.data.err)
 	if(response.data.err==2 && !currentRoute.includes('/login')){
+		console.log("1111")
 		router.push({
 			path:'/login',
 			query:{p:currentRoute}

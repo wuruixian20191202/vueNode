@@ -57,7 +57,9 @@
 	export default {
 		beforeRouteEnter(to, from, next) {
 			let local = window.localStorage.getItem('user')
+			console.log(local,888)
 			if(!local){
+				console.log(45678)
 				alert('请先登录')
 				next('/login')
 				return

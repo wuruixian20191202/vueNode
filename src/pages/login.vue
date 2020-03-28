@@ -59,13 +59,16 @@
 						if (res.data.err === 0) {
 							window.localStorage.setItem('user', JSON.stringify(res.data))
 							if (this.$route.query.p) {
+								
 								this.$router.push(this.$route.query.p).catch(err => {
 									err
 								})
 							} else {
-								this.$router.push('/user').catch(err => {
-									err
-								})
+								// this.$router.push('/user').catch(err => {
+								// 	err
+								// })
+								console.log(12345)
+								this.$router.push('/user')
 							}
 						} else {
 							this.$router.push('/login').catch(err => {

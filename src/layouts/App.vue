@@ -1,6 +1,6 @@
 <template>
 	<div id="app">
-		<Header v-if='$root.hNav' />
+		<Header v-if='$root.hNav'/>
 
 		<keep-alive>
 			<router-view></router-view>
